@@ -25,44 +25,31 @@ Aplikacja została stworzona w technologii **Windows Forms (C#)** i współpracu
 
 ## 🔧 Funkcje
 
-- 🔐 Logowanie administratora
+- 🔐 Logowanie administratora (`LoginForm`)
 - 👥 Zarządzanie użytkownikami:
-  - Dodawanie, edycja (osobny formularz), usuwanie
-- 🏋️‍♂️ Zarządzanie grupami treningowymi (`TrainingGroup`)
-  - Tworzenie grup, przypisywanie użytkowników
-- 🗓️ Zarządzanie planami treningowymi
+  - Dodawanie (`AddUserForm`)
+  - Edycja (`EditUserForm`)
+  - Usuwanie i przegląd (`UserManagementForm`)
+- 🏋️‍♂️ Zarządzanie grupami treningowymi (`GroupManagementForm`)
+  - Tworzenie grup (`TrainingGroup`)
+  - Przypisywanie użytkowników
+- 🗓️ Zarządzanie planami treningowymi (`TrainingManagementForm`)
+  - Typ planu: `CardioTraining`, `StrengthTraining`, `GeneralTraining`
   - Nazwa, opis, lista ćwiczeń, czas trwania
-- 💳 Przegląd statusów płatności
+- 💳 Przegląd statusów płatności (`PaymentsForm`)
 - 📊 Przejrzyste widoki danych (`DataGridView`)
-- 🔄 Bezpośrednia komunikacja z bazą MySQL
+- 🔄 Bezpośrednia komunikacja z bazą MySQL (`DatabaseHelper.cs`)
 
----
-
-## 🗃️ Struktura danych
-
-### Główne tabele w bazie:
-- `Users`
-- `TrainingGroups`
-- `Trainings`
-- `Payments`
-
-### Przykładowe komponenty aplikacji:
-- `LoginForm` – logowanie  
-- `MainForm` – główny panel  
-- `AddUserForm` – dodawanie użytkownika  
-- `EditUserForm` – edycja danych  
-- `TrainingGroupForm` – zarządzanie grupami  
-- `TrainingPlanForm` – edycja planów treningowych
 
 ---
 
 ## 📌 Przykładowy przebieg działania
 
 1. Administrator loguje się przez `LoginForm`
-2. W `MainForm` wybiera operacje: zarządzanie użytkownikami, grupami lub planami
-3. Użytkownik jest dodawany i przypisywany do grupy
-4. Tworzony jest plan treningowy przypisany do grupy
-5. Administrator może sprawdzić status płatności każdego użytkownika
+2. W `MainPanelForm` wybiera operację: zarządzanie użytkownikami, grupami, planami lub płatnościami
+3. Dodaje użytkownika i przypisuje go do grupy
+4. Tworzy plan treningowy (np. `CardioTraining`) przypisany do grupy
+5. Może przeglądać status płatności użytkowników
 
 ---
 
@@ -70,14 +57,13 @@ Aplikacja została stworzona w technologii **Windows Forms (C#)** i współpracu
 
 - 🔗 [Repozytorium GitHub](https://github.com/mgoczok/GymManagementApp)  
 - 📁 [Struktura projektu (Google Drive)]()  
-- 
 
 ---
 
 ## 📌 Status projektu
 
 ✅ Wersja desktopowa funkcjonalna  
-🛠️ Trwają prace nad rozszerzeniami (np. przypisywanie ćwiczeń, optymalizacja interfejsu)
+🛠️ Trwają prace nad rozszerzeniami (np. przypisywanie ćwiczeń, optymalizacja interfejsu, rozszerzenie modeli treningowych)
 
 ---
 
