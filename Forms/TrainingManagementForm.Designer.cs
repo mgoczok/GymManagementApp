@@ -146,6 +146,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(btnAdd);
             Controls.Add(cmbGroup);
@@ -159,7 +160,7 @@
             Controls.Add(buttonBack);
             Controls.Add(dgvTrainings);
             Name = "TrainingManagementForm";
-            Text = "Zarządzanie Treningami";
+            Text = "KFIT - Zarządzanie Treningami";
             ((System.ComponentModel.ISupportInitialize)dgvTrainings).EndInit();
             ResumeLayout(false);
             PerformLayout();

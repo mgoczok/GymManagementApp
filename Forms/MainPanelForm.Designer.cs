@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPanelForm));
             btnUsers = new Button();
             btnGroups = new Button();
             btnSessions = new Button();
@@ -35,7 +36,6 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            label5 = new Label();
             btnLogout = new Button();
             btnPayments = new Button();
             label6 = new Label();
@@ -109,15 +109,6 @@
             label4.TabIndex = 6;
             label4.Text = "Treningi/Zajęcia";
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(615, 40);
-            label5.Name = "label5";
-            label5.Size = new Size(51, 15);
-            label5.TabIndex = 7;
-            label5.Text = "Wyloguj";
-            // 
             // btnLogout
             // 
             btnLogout.Location = new Point(672, 36);
@@ -149,9 +140,12 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(191, 110);
+            pictureBox1.BackColor = SystemColors.GradientInactiveCaption;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(176, 73);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(443, 224);
+            pictureBox1.Size = new Size(447, 244);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
             // 
@@ -159,12 +153,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(800, 625);
-            Controls.Add(pictureBox1);
             Controls.Add(label6);
             Controls.Add(btnPayments);
             Controls.Add(btnLogout);
-            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -172,8 +165,9 @@
             Controls.Add(btnSessions);
             Controls.Add(btnGroups);
             Controls.Add(btnUsers);
+            Controls.Add(pictureBox1);
             Name = "MainPanelForm";
-            Text = "MainPanelForm";
+            Text = "KFIT - Panel admina";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

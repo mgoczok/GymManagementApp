@@ -121,6 +121,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(label3);
             Controls.Add(button1);
@@ -132,7 +133,7 @@
             Controls.Add(txtName);
             Controls.Add(btnSave);
             Name = "AddUserForm";
-            Text = "UserForm";
+            Text = "KFIT - Dodawanie użytkownika";
             ResumeLayout(false);
             PerformLayout();
         }

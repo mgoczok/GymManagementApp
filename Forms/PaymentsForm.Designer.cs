@@ -126,6 +126,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(800, 350);
             Controls.Add(btnBack);
             Controls.Add(btnRefresh);
@@ -137,7 +138,7 @@
             Controls.Add(cmbClient);
             Controls.Add(dgvPayments);
             Name = "PaymentsForm";
-            Text = "Płatności";
+            Text = "KFIT - Płatności";
             ((System.ComponentModel.ISupportInitialize)dgvPayments).EndInit();
             ResumeLayout(false);
             PerformLayout();

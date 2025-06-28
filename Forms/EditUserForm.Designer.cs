@@ -17,6 +17,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditUserForm));
             txtName = new TextBox();
             txtEmail = new TextBox();
             txtPassword = new TextBox();
@@ -26,6 +27,8 @@
             label3 = new Label();
             label4 = new Label();
             button1 = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // txtName
@@ -106,11 +109,23 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(218, 36);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(376, 190);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
+            // 
             // EditUserForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(button1);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -121,7 +136,8 @@
             Controls.Add(txtEmail);
             Controls.Add(txtName);
             Name = "EditUserForm";
-            Text = "EditUserForm";
+            Text = "KFIT - Edycja użytkownika";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -137,5 +153,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private Button button1;
+        private PictureBox pictureBox1;
     }
 }

@@ -134,6 +134,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(button2);
             Controls.Add(label1);
@@ -146,7 +147,7 @@
             Controls.Add(textBoxGroupDescription);
             Controls.Add(buttonAddGroup);
             Name = "GroupManagementForm";
-            Text = "GroupManagementForm";
+            Text = "KFIT - Grupy";
             Load += GroupManagementForm_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewGroups).EndInit();
             ResumeLayout(false);

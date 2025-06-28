@@ -69,7 +69,7 @@
             // dgvUsers
             // 
             dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUsers.Location = new Point(165, 54);
+            dgvUsers.Location = new Point(165, 108);
             dgvUsers.Name = "dgvUsers";
             dgvUsers.Size = new Size(417, 195);
             dgvUsers.TabIndex = 3;
@@ -88,6 +88,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(button2);
             Controls.Add(dgvUsers);
@@ -95,7 +96,7 @@
             Controls.Add(btnAddUser);
             Controls.Add(btnEditUser);
             Name = "UserManagementForm";
-            Text = "UserManagementForm";
+            Text = "KFIT - Użytkownicy";
             Load += UserManagementForm_Load;
             ((System.ComponentModel.ISupportInitialize)dgvUsers).EndInit();
             ResumeLayout(false);
