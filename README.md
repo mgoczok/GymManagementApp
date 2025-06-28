@@ -56,7 +56,7 @@ Aplikacja została stworzona w technologii **Windows Forms (C#)** i współpracu
 ## 📎 Linki
 
 - 🔗 [Repozytorium GitHub](https://github.com/mgoczok/GymManagementApp)  
-- 📁 [Struktura projektu (Google Drive)]()  
+- 📁 [Struktura projektu (Google Drive)](https://drive.google.com/drive/folders/11qJBdhl79cRjp44qzcRHsMAu46lUl03p?usp=drive_link)  
 
 ---
 
