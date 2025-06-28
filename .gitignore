@@ -7,6 +7,12 @@
 *.dll
 *.exe
 
+
+# Build folders
+bin/
+obj/
+
+
 # NuGet
 *.nupkg
 packages/
