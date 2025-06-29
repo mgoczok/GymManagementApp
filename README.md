@@ -25,20 +25,20 @@ Aplikacja została stworzona w technologii **Windows Forms (C#)** i współpracu
 
 ## 🔧 Funkcje
 
-- 🔐 Logowanie administratora (`LoginForm`)
-- 👥 Zarządzanie użytkownikami:
-  - Dodawanie (`AddUserForm`)
-  - Edycja (`EditUserForm`)
-  - Usuwanie i przegląd (`UserManagementForm`)
-- 🏋️‍♂️ Zarządzanie grupami treningowymi (`GroupManagementForm`)
-  - Tworzenie grup (`TrainingGroup`)
-  - Przypisywanie użytkowników
-- 🗓️ Zarządzanie planami treningowymi (`TrainingManagementForm`)
-  - Typ planu: `CardioTraining`, `StrengthTraining`, `GeneralTraining`
-  - Nazwa, opis, lista ćwiczeń, czas trwania
-- 💳 Przegląd statusów płatności (`PaymentsForm`)
-- 📊 Przejrzyste widoki danych (`DataGridView`)
-- 🔄 Bezpośrednia komunikacja z bazą MySQL (`DatabaseHelper.cs`)
+-  Logowanie administratora (`LoginForm`)
+-  Zarządzanie użytkownikami:
+   Dodawanie (`AddUserForm`)
+   Edycja (`EditUserForm`)
+   Usuwanie i przegląd (`UserManagementForm`)
+-  Zarządzanie grupami treningowymi (`GroupManagementForm`)
+   Tworzenie grup (`TrainingGroup`)
+   Przypisywanie użytkowników
+-  Zarządzanie planami treningowymi (`TrainingManagementForm`)
+   Typ planu: `CardioTraining`, `StrengthTraining`, `GeneralTraining`
+   Nazwa, opis, lista ćwiczeń, czas trwania
+-  Przegląd statusów płatności (`PaymentsForm`)
+-  Przejrzyste widoki danych (`DataGridView`)
+-  Bezpośrednia komunikacja z bazą MySQL (`DatabaseHelper.cs`)
 
 
 ---
@@ -55,16 +55,42 @@ Aplikacja została stworzona w technologii **Windows Forms (C#)** i współpracu
 
 ## 📎 Linki
 
-- 🔗 [Repozytorium GitHub](https://github.com/mgoczok/GymManagementApp)  
-- 📁 [Struktura projektu (Google Drive)](https://drive.google.com/drive/folders/11qJBdhl79cRjp44qzcRHsMAu46lUl03p?usp=drive_link)  
+- [Repozytorium GitHub](https://github.com/mgoczok/GymManagementApp)  
+- Dokumentacja projektu KFIT [Dokumentacja](https://docs.google.com/document/d/1MdDYTozUvKZkoMoNhbUP1GgWAnoxanYu/edit?usp=sharing&ouid=115259876342809122980&rtpof=true&sd=true)
+
 
 ---
 
-## 📌 Status projektu
+## Proces instalacji
 
-✅ Wersja desktopowa funkcjonalna  
-🛠️ Trwają prace nad rozszerzeniami (np. przypisywanie ćwiczeń, optymalizacja interfejsu, rozszerzenie modeli treningowych)
+1. Pobierz projekt  
+   Sklonuj repozytorium lub pobierz jako ZIP:  
+   [https://github.com/mgoczok/GymManagementApp](https://github.com/mgoczok/GymManagementApp)
+   
+2. Otwórz projekt w Visual Studio
 
----
+3. Zainstaluj zależności NuGet
+   Otwórz *Package Manager Console* i wpisz:  
+   Install-Package MySql.Data
 
+4. Skonfiguruj połączenie z bazą danych
+W pliku `DatabaseHelper.cs` podmień dane do logowania do MySQL
+  - Utwórz bazę danych MySQL
+  - Uruchom lokalny serwer MySQL (np. XAMPP).
 
+5. Utwórz bazę o nazwie ,np. gymdb
+  - Zaimportuj plik .sql dostępny tutaj:
+[https://github.com/mgoczok/baza](https://github.com/mgoczok/baza)
+
+6. Uruchom projekt
+- Wybierz projekt jako startowy w Visual Studio (GymManagementApp)
+
+Kliknij F5 lub przycisk „Start”
+
+--- 
+## 📈 Plany na przyszłość
+
+- Kalendarz i harmonogram zajęć
+- Moduł trenerów personalnych
+- Statystyki aktywności i postępów użytkowników
+- Synchronizacja z aplikacją webową
